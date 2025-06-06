@@ -44,7 +44,7 @@ public class DestructiveCloud extends BasicCloud {
         var newState = world.getBlockState(newPos);
         var entities =  world.getEntitiesByClass(Entity.class, BOX.offset(newPos), EntityPredicates.EXCEPT_SPECTATOR);
 
-        if (!newState.isIn(MuTags.BLOCK_CLOUDS)) {
+        if (!newState.isIn(MuTags.CLOUDS_BLOCK)) {
             if (!entities.isEmpty() || !newState.isAir())
                 world.playSound(null, pos, SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.BLOCKS, 0.25f, random.nextFloat());
             entities.forEach(entity -> entity.damage(world.getDamageSources().inFire(), 100));

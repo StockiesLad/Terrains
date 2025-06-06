@@ -12,4 +12,7 @@ public class MagicalUtilities {
     public static Identifier getIdentifier(String name) {
         return new Identifier(NAMESPACE, name);
     }
+    public static String interpolateNameSpace(String string) {
+        return string.replace("${name}", NAMESPACE);
+    }
 }

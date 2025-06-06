@@ -29,6 +29,7 @@ dependencies {
 
 	modCompileOnlyApi("mezz.jei:jei-${minecraft_version}-fabric-api:${jei_version}")
 	modRuntimeOnly("mezz.jei:jei-${minecraft_version}-fabric:${jei_version}")
+	modImplementation "curse.maven:jade-324717:${project.jade_version_id}"
 }
 
 loom {

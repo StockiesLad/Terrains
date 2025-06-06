@@ -1,3 +1,8 @@
+Make flares and irradiated clouds use their own damage source
+make flares lightable with dispensers
+add recipes for flares
+add REI compat for recipes (add wthit compat too)
+
 Stained Trees {
     Make the trees spawn as a gradient.
     Make each colour drop fibrous dye which can be smelted for xp and a dye

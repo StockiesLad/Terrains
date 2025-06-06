@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_torch",
+  "textures": {
+    "torch": "magical_utilities:block/thermite_flare_unlit"
+  }
+}

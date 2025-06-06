@@ -178,7 +178,7 @@ public class BasicCloud extends TransparentBlock {
 
             var sideState = world.getBlockState(sidePos);
 
-            if (!sideState.isIn(MuTags.BLOCK_CLOUDS)) return false;
+            if (!sideState.isIn(MuTags.CLOUDS_BLOCK)) return false;
             if (sideState.contains(DORMANT) && !sideState.get(DORMANT)) return false;
 
             var sideBlock = sideState.getBlock();

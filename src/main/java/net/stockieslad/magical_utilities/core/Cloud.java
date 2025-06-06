@@ -45,7 +45,7 @@ public enum Cloud {
             "Pacifies with Glowstone Dust.",
             "Activates with Redstone Dust",
             new RedstoneCloud(),
-            modifiersWithRarity(64, trapezoid(YOffset.BOTTOM, fixed(64))),
+            modifiersWithRarity(128, trapezoid(YOffset.BOTTOM, fixed(64))),
             excludeByKey(LUSH_CAVES).and(excludeByKey(DRIPSTONE_CAVES)).and(excludeByKey(DEEP_DARK)).and(foundInOverworld())
     ),
     BLAZING(
@@ -53,7 +53,7 @@ public enum Cloud {
             "Pacifies with a Snowball",
             "Activates with Blaze Powder",
             new MagmaticCloud(),
-            modifiersWithRarity(64, uniform(fixed(30), fixed(40))),
+            modifiersWithRarity(128, uniform(fixed(30), fixed(40))),
             tag(IS_NETHER)
     ),
     SULFUR(
@@ -61,7 +61,7 @@ public enum Cloud {
             "Pacifies with a Ghast Tear",
             "Activates with a Fermented Spider Eye",
             new DamagingCloud(),
-            modifiersWithRarity(64, trapezoid(YOffset.BOTTOM, YOffset.TOP)),
+            modifiersWithRarity(128, trapezoid(YOffset.BOTTOM, YOffset.TOP)),
             tag(IS_NETHER)
     ),
     FERROUS(
@@ -69,7 +69,7 @@ public enum Cloud {
             "Pacifies with a Lapis Lazuli",
             "Activates with Redstone Dust",
             new MagneticCloud(),
-            modifiersWithRarity(4, trapezoid(YOffset.BOTTOM, YOffset.TOP)),
+            modifiersWithRarity(8, trapezoid(YOffset.BOTTOM, YOffset.TOP)),
             includeByKey(DRIPSTONE_CAVES).and(foundInOverworld())
     ),
     CHAOS(
@@ -83,7 +83,7 @@ public enum Cloud {
             "Pacifies with a Fermented Spider Eye",
             "Activates with a Ghast Tear",
             new HealingCloud(),
-            modifiersWithRarity(4, trapezoid(YOffset.BOTTOM, YOffset.TOP)),
+            modifiersWithRarity(8, trapezoid(YOffset.BOTTOM, YOffset.TOP)),
             includeByKey(LUSH_CAVES).and(foundInOverworld())
     ),
     ENDER(
@@ -103,7 +103,7 @@ public enum Cloud {
             "Pacifies with Blaze Powder",
             "Activates with a Snowball",
             new ColdCloud(),
-            modifiersWithRarity(64, uniform(fixed(65), fixed(75))),
+            modifiersWithRarity(128, uniform(fixed(65), fixed(75))),
             IS_COLD
     ),
     DENSE(
@@ -111,7 +111,7 @@ public enum Cloud {
             "Pacifies with a Steam Cloud",
             "Activates with a Gelid Cloud",
             new HydroCloud(),
-            modifiersWithRarity(64, uniform(fixed(65), fixed(75))),
+            modifiersWithRarity(128, uniform(fixed(65), fixed(75))),
             tag(IS_OCEAN).and(IS_COLD.negate())
     ),
     INDIGO(
@@ -137,7 +137,7 @@ public enum Cloud {
             "Pacifies with Glowstone Dust",
             "Activates with Redstone Dust",
             new RisingCloud(),
-            modifiersWithRarity(32, uniform(fixed(86), YOffset.belowTop(64))),
+            modifiersWithRarity(64, uniform(fixed(86), YOffset.belowTop(64))),
             foundInOverworld().and(tag(IS_OCEAN).negate())
     );
 

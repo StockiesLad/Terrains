@@ -27,7 +27,7 @@ public class CloudDispenserBehaviour implements DispenserBehavior {
         var state = world.getBlockState(pos);
         var block = state.getBlock();
 
-        if (!state.isIn(MuTags.BLOCK_CLOUDS)) return ITEM_DISPENSER_BEHAVIOUR.dispense(pointer, stack);
+        if (!state.isIn(MuTags.CLOUDS_BLOCK)) return ITEM_DISPENSER_BEHAVIOUR.dispense(pointer, stack);
 
         if (block instanceof BasicCloud cloud)
             if (cloud.tryPacify(world, stack, pos, state, null) || cloud.tryActivate(world, stack, pos, state, null))

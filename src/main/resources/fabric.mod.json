@@ -23,6 +23,9 @@
     ],
     "jei_mod_plugin": [
       "net.stockieslad.magical_utilities.compat.jei.MagicalUtilitiesJEI"
+    ],
+    "jade": [
+      "net.stockieslad.magical_utilities.compat.jade.MuJadeCompat"
     ]
   },
   "mixins": [

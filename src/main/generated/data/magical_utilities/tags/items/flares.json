@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "magical_utilities:radioactive_flare",
+    "magical_utilities:phosphorus_flare",
+    "magical_utilities:thermite_flare",
+    "magical_utilities:magnesium_flare",
+    "magical_utilities:dicyano_flare"
+  ]
+}
